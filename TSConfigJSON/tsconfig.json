@@ -16,8 +16,6 @@
     "noImplicitOverride": true,
     "noErrorTruncation": true,
     "exactOptionalPropertyTypes": true,
-    "target": "ESNext",
-    "lib": ["ESNext", "DOM"],
     "allowJs": true,
     "checkJs": true,
   }
