@@ -1,0 +1,24 @@
+noImplicitReturns: true
+    show error when return statement is not written in function body where return type is not undefined
+
+noImplicitAny: true
+    show error when type of variable can't be inferred and fallbacked to 'any'
+
+noImplicitThis: true
+    show error when type of 'this' can't be inferred and fallbacked to 'any'
+
+strictFunctionTypes: true
+    show error when function params dont match
+
+useUnknownInCatchVariables: true
+    catched error can be non Error instance, so unknown is automatically used
+
+fields:
+    - lib: https://www.typescriptlang.org/tsconfig/#lib
+    - target: https://www.typescriptlang.org/tsconfig/#target
+    - rootDir: https://www.typescriptlang.org/tsconfig/#rootDir
+    - emit: https://www.typescriptlang.org/tsconfig/#Emit_6246
+        - declaration(.d.ts files)
+        - declarationDir
+        - emit declaration only(skip .js, only .d.ts)
+        - outDir

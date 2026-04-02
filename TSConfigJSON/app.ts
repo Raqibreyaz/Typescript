@@ -1,30 +1,42 @@
-import {x} from './app'
-
-interface Settings {
-  darkMode: boolean;
-  lastSaved: Date;
-  [custom: string]: string | number | boolean | Date;
+function fn(s: string) {
+  const x = 32;
+  console.log(s.slice(1));
 }
 
-const setting: Settings = {
-  darkMode: true,
-  lastSaved: new Date(),
+class Rectangle {
+  width: number;
+  height: number;
+
+  constructor(width: number, height: number) {
+    this.width = width;
+    this.height = height;
+  }
+
+  getAreaFunction() {
+    const thisRef = this;
+    return function () {
+      return thisRef.width * thisRef.height;
+    };
+  }
+}
+const x = 32;
+
+function fn2(x: string) {
+  console.log("Hello, " + x.toLowerCase());
+}
+
+type StringOrNumberFunc = (ns: string | number) => void;
+
+let func: StringOrNumberFunc = fn2;
+
+// ***type not working!
+type Methodish = {
+  func(x: string | number): void;
+};
+const m: Methodish = {
+  func: fn2,
 };
 
-class Box {
-  private value: number;
-
-  constructor(val:number) {
-    this.value = val;
-  }
-
-  close() {
-    console.log("Closing Lid");
-  }
-}
-
-class Model extends Box {
-  override close() {
-    console.log("Closed");
-  }
-}
+try {
+  throw new Error("random error");
+} catch (error) {}
