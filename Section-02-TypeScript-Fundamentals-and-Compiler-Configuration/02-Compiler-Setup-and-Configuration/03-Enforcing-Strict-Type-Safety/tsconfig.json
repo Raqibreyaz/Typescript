@@ -17,6 +17,6 @@
     "noErrorTruncation": true,
     "exactOptionalPropertyTypes": true,
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": true
   }
 }

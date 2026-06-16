@@ -1,0 +1,24 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Section-17-TypeScript-in-Node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raqibreyaz/Typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Raqibreyaz/Typescript/issues"
+  },
+  "homepage": "https://github.com/Raqibreyaz/Typescript#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.3"
+  }
+}
