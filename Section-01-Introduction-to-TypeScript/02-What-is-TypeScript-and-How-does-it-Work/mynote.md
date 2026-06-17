@@ -2,6 +2,8 @@
 
 - actually, for showing js/ts intellisense, vs code starts a typescript server which on hovering to a function or a variable returns a json response having the data to show in the hovered popover
 
+- ts lang service uses custom json-based protocol called typescript server protocol, and it runs over Nodejs IPC using Stdio streams
+
 - these json responses can be seen in the vs-code's terminal's output tab by selectin typescript in the 'select' box and 'strace' in the gear icon
 
 - we can also edit the text shown in the popover hover, by going in the file of the process working on that hover effect data, usually we get it's path between '--max-old-space-size=3072' and '--useInferredProjectPerProjectRoot', in the 'lib' folder try to alter the contents of something es5.d.ts named file
